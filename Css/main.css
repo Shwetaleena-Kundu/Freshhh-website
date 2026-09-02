@@ -1,0 +1,1306 @@
+/* Navbar outer area */
+.header {
+  width: 100%;
+  padding: 0;
+  background-color: #ffffff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Navbar inside area */
+.header .navbar {
+  padding: 4px 0;
+}
+/* Navbar logo */
+.header .navbar-brand img {
+  width: 115px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+.header .navbar-brand img:hover{
+  transform: scale(1.15);
+}
+/* Navbar links */
+.header .navbar-nav .nav-link {
+  color: #222222;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* Link colour when mouse touches it */
+.header .navbar-nav .nav-link:hover {
+  color: #26862f;
+}
+/* Current page link */
+.header .navbar-nav .nav-link.active {
+  color: #26862f;
+}
+.header .navbar-nav .nav-link:hover::after,
+.header .navbar-nav .nav-link.active::after {
+  width: 60%;
+}
+/* Phone area */
+.header .phone-area {
+  text-align: right;
+}
+/* Search box */
+.search-box {
+  display: flex;
+  align-items: center;
+
+  border: 1px solid #d5d5d5;
+  border-radius: 8px;
+
+  overflow: hidden;
+
+  transition: border-color 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+/* Search input */
+.search-box input {
+  width: 160px;
+  padding: 9px 12px;
+
+  font-size: 14px;
+
+  border: none;
+  outline: none;
+}
+
+/* Search icon button */
+.search-box button {
+  width: auto;
+  padding: 9px 12px;
+
+  color: #174d2b;
+  background-color: #ffffff;
+
+  border: none;
+  cursor: pointer;
+}
+
+/* When user clicks inside */
+.search-box:focus-within {
+  border-color: #26862f;
+
+  box-shadow: 0 0 0 3px rgba(38, 134, 47, 0.12);
+}
+
+/* Search-icon hover */
+.search-box button:hover {
+  color: #ffffff;
+  background-color: #26862f;
+}
+@media (max-width: 991px) {
+  .search-box {
+    width: 100%;
+    margin: 12px 0;
+  }
+
+  .search-box input {
+    width: 100%;
+  }
+}
+.account-btn {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #174d2b;
+  background-color: #ffffff;
+
+  border: 1px solid #d5d5d5;
+  border-radius: 50%;
+
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+.account-btn span {
+  display: none;
+}
+
+.account-btn:hover {
+  color: #ffffff;
+  background-color: #26862f;
+  border-color: #26862f;
+}
+@media (max-width: 991px) {
+  .account-btn {
+    width: 100%;
+    height: auto;
+
+    justify-content: flex-start;
+    gap: 8px;
+
+    padding: 10px 14px;
+    margin-bottom: 10px;
+
+    border-radius: 8px;
+  }
+
+  .account-btn span {
+    display: inline;
+  }
+}
+
+/* Small Call Us text */
+.header .call-label {
+  display: block;
+  color: #777777;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* Phone number */
+.header .phone_no {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  color: #174d2b;
+  font-size: 15px;
+  font-weight: 600;
+
+  text-decoration: none;
+  white-space: nowrap;
+
+  transition: color 0.3s ease;
+}
+
+/* Phone hover */
+.header .phone_no:hover {
+  color: #f57c00;
+}
+/* Cart button */
+.header .cart-btn {
+  color: #ffffff;
+  background-color: #198754;
+
+  padding: 10px 16px;
+  border: 2px solid #198754;
+  border-radius: 6px;
+
+  font-size: 16px;
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+.header .cart-btn i {
+  margin-right: 6px;
+}
+.header .cart-btn:hover {
+  color: #198754;
+  background-color: #ffffff;
+
+  transform: translateY(-2px);
+}
+/* Hero section */
+.hero-section {
+  padding: 60px 0;
+  background-color: #fffdf6;
+  overflow: hidden;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Basket image container */
+.hero-image {
+  text-align: right;
+}
+
+/* Basket image */
+.hero-image img {
+  display: block;
+
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+
+  margin-left: auto;
+}
+/* Keep both buttons in one row */
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+
+  margin-top: 25px;
+}
+
+/* Green Shop Fresh button */
+.shop-btn {
+  display: inline-block;
+
+  color: #ffffff;
+  background-color: #198754;
+
+  padding: 12px 20px;
+  border-radius: 6px;
+
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Shop button hover */
+.shop-btn:hover {
+  color: #ffffff;
+  background-color: #126b41;
+}
+
+/* Explore Products link */
+.explore-btn {
+  color: #f26b21;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Explore link hover */
+.explore-btn:hover {
+  color: #198754;
+}
+/* Hero heading */
+.hero-content h1 {
+  color: #174d2b;
+
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.2;
+
+  margin-bottom: 20px;
+}
+
+/* Hero paragraph */
+.hero-content p {
+  color: #555555;
+
+  font-size: 17px;
+  line-height: 1.7;
+
+  max-width: 520px;
+  margin-bottom: 0;
+}
+/* Tablets and phones */
+@media (max-width: 991px) {
+
+  .hero-section {
+    padding: 40px 0;
+  }
+
+  .hero-content {
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .hero-content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-image img {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+}
+@media (max-width: 576px) {
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    font-size: 15px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .shop-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+}
+/* Features section */
+.features-section {
+  padding: 30px 0 60px;
+  background-color: #ffffff;
+}
+
+/* Feature card */
+.feature-box {
+  height: 100%;
+  padding: 25px;
+
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  background-color: #ffffff;
+
+  border: 1px solid #eeeeee;
+  border-radius: 14px;
+
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+/* Feature card hover */
+.feature-box:hover {
+  transform: translateY(-6px);
+
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.13);
+}
+
+/* Round icon area */
+.feature-icon {
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  color: #26862f;
+  background-color: #edf8e8;
+
+  font-size: 25px;
+  border-radius: 50%;
+}
+
+/* Feature heading */
+.feature-content h3 {
+  color: #174d2b;
+
+  font-size: 19px;
+  font-weight: 700;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-bottom: 6px;
+}
+
+/* Feature paragraph */
+.feature-content p {
+  color: #666666;
+
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-bottom: 0;
+}
+/* Categories section */
+.categories-section {
+  padding: 65px 0;
+  background-color: #fdfdfd;
+}
+
+/* Heading area */
+.section-heading {
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.section-heading h2 {
+  color: #174d2b;
+
+  font-size: 34px;
+  font-weight: 700;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-bottom: 10px;
+}
+
+/* Leaf and lines under heading */
+.heading-decoration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  color: #62a832;
+}
+
+/* Small green lines */
+.heading-decoration span {
+  width: 35px;
+  height: 2px;
+
+  background-color: #b5d99c;
+}
+
+/* Category card */
+.category-card {
+  position: relative;
+  display: block;
+
+  height: 100%;
+
+  color: #222222;
+  background-color: #ffffff;
+
+  text-align: center;
+  text-decoration: none;
+
+  border-radius: 14px;
+
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.09);
+
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+/* Category card hover */
+.category-card:hover {
+  color: #174d2b;
+
+  transform: translateY(-8px);
+
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.14);
+}
+
+/* Image box */
+.category-image {
+  height: 220px;
+
+  overflow: hidden;
+
+  border-radius: 14px 14px 0 0;
+}
+
+/* Category image */
+.category-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.4s ease;
+}
+
+/* Image zoom on card hover */
+.category-card:hover .category-image img {
+  transform: scale(1.08);
+}
+
+/* Round category icon */
+.category-icon {
+  width: 58px;
+  height: 58px;
+
+  margin: -29px auto 0;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+  background-color: #58a52c;
+
+  font-size: 22px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+}
+
+/* Category name */
+.category-card h3 {
+  color: #174d2b;
+
+  font-size: 19px;
+  font-weight: 700;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 10px 10px 22px;
+  margin: 0;
+}
+/* Products section */
+.products-section {
+  padding: 65px 0;
+  background-color: #f8fbf6;
+}
+
+/* Product card */
+.product-card {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: #ffffff;
+
+  border: 1px solid #eeeeee;
+  border-radius: 14px;
+
+  overflow: hidden;
+
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+/* Product hover */
+.product-card:hover {
+  transform: translateY(-7px);
+
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.14);
+}
+
+/* Product image area */
+.product-image {
+  height: 230px;
+  overflow: hidden;
+}
+
+/* Product image */
+.product-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+  object-fit: cover;
+
+  transition: transform 0.4s ease;
+}
+
+/* Zoom image when card is hovered */
+.product-card:hover .product-image img {
+  transform: scale(1.07);
+}
+
+/* Product information */
+.product-content {
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* Product name */
+.product-content h3 {
+  color: #222222;
+
+  font-size: 18px;
+  font-weight: 700;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-bottom: 10px;
+}
+
+/* Product price */
+.product-price {
+  color: #26862f;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  margin-bottom: 12px;
+}
+
+/* Smaller price unit */
+.product-price span {
+  font-size: 13px;
+  font-weight: 500;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Rating row */
+.product-rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 18px;
+}
+
+/* Star colour */
+.product-rating .stars {
+  color: #f5a623;
+  font-size: 14px;
+}
+
+/* Rating number */
+.product-rating > span {
+  color: #777777;
+  font-size: 12px;
+}
+
+/* Add to Cart button */
+.add-cart-btn {
+  width: 100%;
+
+  margin-top: auto;
+  padding: 10px 14px;
+
+  color: #26862f;
+  background-color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 600;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border: 1px solid #26862f;
+  border-radius: 7px;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+/* Space after cart icon */
+.add-cart-btn i {
+  margin-right: 7px;
+}
+
+/* Button hover */
+.add-cart-btn:hover {
+  color: #ffffff;
+  background-color: #26862f;
+}
+/* Offer section */
+.offer-section {
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+/* Main offer banner */
+.offer-banner {
+  padding: 25px 40px;
+
+  background: linear-gradient(
+    90deg,
+    #fff0c8,
+    #ffe2ad
+  );
+
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* Mango image area */
+.offer-image {
+  height: 230px;
+}
+
+/* Mango image */
+.offer-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+  object-fit: contain;
+}
+
+/* Offer heading */
+.offer-content h2 {
+  color: #174d2b;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 32px;
+  font-weight: 700;
+
+  margin-bottom: 12px;
+}
+
+/* Offer paragraph */
+.offer-content p {
+  color: #333333;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 21px;
+
+  margin-bottom: 20px;
+}
+
+/* 20% OFF text */
+.offer-content strong {
+  color: #f26b21;
+  font-size: 30px;
+}
+
+/* Shop Now button */
+.offer-btn {
+  display: inline-block;
+
+  padding: 11px 20px;
+
+  color: #ffffff;
+  background-color: #26862f;
+
+  font-size: 15px;
+  font-weight: 600;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-decoration: none;
+
+  border-radius: 7px;
+
+  transition: all 0.3s ease;
+}
+
+/* Space beside arrow */
+.offer-btn i {
+  margin-left: 7px;
+}
+
+/* Button hover */
+.offer-btn:hover {
+  color: #ffffff;
+  background-color: #174d2b;
+
+  transform: translateX(4px);
+}
+@media (max-width: 767px) {
+
+  .offer-banner {
+    padding: 25px 20px;
+    text-align: center;
+  }
+
+  .offer-image {
+    height: 180px;
+    margin-bottom: 20px;
+  }
+
+  .offer-content h2 {
+    font-size: 26px;
+  }
+
+  .offer-content p {
+    font-size: 17px;
+  }
+
+  .offer-content strong {
+    font-size: 24px;
+  }
+
+}
+/* Why Choose Us section */
+.why-section {
+  padding: 65px 0;
+  background-color: #ffffff;
+}
+
+/* One reason */
+.why-item {
+  height: 100%;
+  padding: 15px;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+
+  transition: transform 0.3s ease;
+}
+
+/* Reason hover */
+.why-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Round icon area */
+.why-icon {
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  color: #26862f;
+  background-color: #edf8e8;
+
+  font-size: 23px;
+
+  border-radius: 50%;
+
+  transition: all 0.3s ease;
+}
+
+/* Icon hover */
+.why-item:hover .why-icon {
+  color: #ffffff;
+  background-color: #26862f;
+
+  transform: rotate(8deg);
+}
+
+/* Reason heading */
+.why-content h3 {
+  color: #174d2b;
+
+  font-size: 17px;
+  font-weight: 700;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-bottom: 7px;
+}
+
+/* Reason paragraph */
+.why-content p {
+  color: #666666;
+
+  font-size: 13px;
+  line-height: 1.6;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-bottom: 0;
+}
+/* Newsletter section */
+.newsletter-section {
+  padding: 40px 0;
+  background-color: #ffffff;
+}
+
+/* Newsletter banner */
+.newsletter-box {
+  padding: 35px 40px;
+
+  background-color: #edf8e8;
+
+  border-radius: 16px;
+}
+
+/* Icon and text together */
+.newsletter-info {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+/* Round email icon */
+.newsletter-icon {
+  width: 65px;
+  height: 65px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  color: #ffffff;
+  background-color: #26862f;
+
+  font-size: 25px;
+
+  border-radius: 50%;
+}
+
+/* Newsletter heading */
+.newsletter-content h2 {
+  color: #174d2b;
+
+  font-size: 22px;
+  font-weight: 700;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-bottom: 7px;
+}
+
+/* Newsletter paragraph */
+.newsletter-content p {
+  color: #666666;
+
+  font-size: 13px;
+  line-height: 1.6;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-bottom: 0;
+}
+
+/* Newsletter form */
+.newsletter-form {
+  width: 100%;
+  max-width: none;
+
+  display: flex;
+
+  padding: 0;
+  margin: 0;
+
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+/* Email input */
+.newsletter-form input {
+  flex: 1;
+
+  padding: 13px 16px;
+
+  font-size: 14px;
+
+  border: 1px solid #d7e3d2;
+  border-right: none;
+  border-radius: 8px 0 0 8px;
+
+  outline: none;
+}
+
+/* Input when clicked */
+.newsletter-form input:focus {
+  border-color: #26862f;
+
+  box-shadow: 0 0 0 3px rgba(38, 134, 47, 0.12);
+}
+
+/* Subscribe button */
+.newsletter-form button {
+  width: auto;
+
+  padding: 13px 22px;
+
+  color: #ffffff;
+  background-color: #26862f;
+
+  font-size: 14px;
+  font-weight: 600;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border: 1px solid #26862f;
+  border-radius: 0 8px 8px 0;
+
+  cursor: pointer;
+
+  transition: background-color 0.3s ease;
+}
+
+/* Subscribe hover */
+.newsletter-form button:hover {
+  background-color: #174d2b;
+}
+/* Footer */
+.footer {
+  padding: 60px 0 0;
+
+  color: #ffffff;
+  background-color: #0b5d2a;
+}
+
+/* Footer brand name */
+.footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #ffffff;
+
+  font-size: 30px;
+  font-weight: 700;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-decoration: none;
+
+  margin-bottom: 18px;
+}
+
+/* Logo hover */
+.footer-logo:hover {
+  color: #b7e38c;
+}
+
+/* Brand description */
+.footer-about {
+  color: #d5eadb;
+
+  font-size: 14px;
+  line-height: 1.7;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-bottom: 20px;
+}
+
+/* Footer headings */
+.footer h3 {
+  color: #ffffff;
+
+  font-size: 18px;
+  font-weight: 700;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-bottom: 20px;
+}
+
+/* Remove list defaults */
+.footer-links,
+.contact-list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+/* Space between links */
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+/* Footer links */
+.footer-links a {
+  color: #d5eadb;
+
+  font-size: 14px;
+
+  text-decoration: none;
+
+  transition: color 0.3s ease,
+              padding-left 0.3s ease;
+}
+
+/* Footer link hover */
+.footer-links a:hover {
+  color: #ffffff;
+  padding-left: 6px;
+}
+
+/* Social icon row */
+.social-links {
+  display: flex;
+  gap: 10px;
+}
+
+/* Social circles */
+.social-links a {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+/* Social hover */
+.social-links a:hover {
+  color: #0b5d2a;
+  background-color: #ffffff;
+
+  transform: translateY(-4px);
+}
+
+/* Contact items */
+.contact-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+
+  color: #d5eadb;
+
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-bottom: 15px;
+}
+
+/* Contact icons */
+.contact-list i {
+  color: #a8d96f;
+  margin-top: 4px;
+}
+
+/* Contact links */
+.contact-list a {
+  color: #d5eadb;
+  text-decoration: none;
+}
+
+/* Contact hover */
+.contact-list a:hover {
+  color: #ffffff;
+}
+
+/* Copyright area */
+.footer-bottom {
+  margin-top: 45px;
+  padding: 18px 0;
+
+  text-align: center;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Copyright text */
+.footer-bottom p {
+  color: #d5eadb;
+
+  font-size: 13px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 0;
+}
+/* Navbar wishlist button */
+.wishlist-nav-btn {
+  padding: 11px 16px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  color: #174d2b;
+  background-color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+
+  border: 1px solid #d7e2d2;
+  border-radius: 8px;
+
+  transition: 0.3s ease;
+}
+
+.wishlist-nav-btn:hover {
+  color: #ffffff;
+  background-color: #e53935;
+  border-color: #e53935;
+}
+
+.wishlist-nav-btn i {
+  color: #e53935;
+}
+
+.wishlist-nav-btn:hover i {
+  color: #ffffff;
+}
+/* ==================================
+   SCROLL TO TOP
+================================== */
+
+.scroll-top-btn {
+  position: fixed;
+  z-index: 999;
+
+  right: 25px;
+  bottom: 25px;
+
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+  background-color: #4f922d;
+
+  font-size: 17px;
+
+  border: none;
+  border-radius: 50%;
+
+  box-shadow:
+    0 7px 20px rgba(23, 77, 43, 0.25);
+
+  cursor: pointer;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform: translateY(15px);
+
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease,
+    transform 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.scroll-top-btn.show {
+  opacity: 1;
+  visibility: visible;
+
+  transform: translateY(0);
+}
+
+.scroll-top-btn:hover {
+  background-color: #174d2b;
+}
+
+@media (max-width: 576px) {
+
+  .scroll-top-btn {
+    right: 16px;
+    bottom: 16px;
+
+    width: 43px;
+    height: 43px;
+  }
+
+}
+/* ==================================
+   FLOATING WHATSAPP BUTTON
+================================== */
+
+.whatsapp-float {
+  position: fixed;
+  z-index: 999;
+
+  right: 25px;
+  bottom: 85px;
+
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+  background-color: #25d366;
+
+  font-size: 27px;
+  text-decoration: none;
+
+  border-radius: 50%;
+
+  box-shadow:
+    0 7px 20px rgba(0, 0, 0, 0.2);
+
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  color: #ffffff;
+  background-color: #128c4a;
+
+  transform: translateY(-3px) scale(1.05);
+}
+
+@media (max-width: 576px) {
+
+  .whatsapp-float {
+    right: 16px;
+    bottom: 72px;
+
+    width: 47px;
+    height: 47px;
+
+    font-size: 24px;
+  }
+
+}

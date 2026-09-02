@@ -1,0 +1,485 @@
+/* ==================================
+   GALLERY HERO
+================================== */
+
+.gallery-hero {
+  width: 100%;
+  min-height: 360px;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+
+  background-color: #fffdf4;
+  overflow: hidden;
+}
+
+/* Allow content to use more width */
+.gallery-hero .container {
+  max-width: 1400px;
+}
+
+/* Left content */
+.gallery-hero-content {
+  padding: 45px 0;
+}
+
+/* Small green label */
+.gallery-label {
+  display: inline-block;
+
+  padding: 7px 18px;
+  margin-bottom: 15px;
+
+  color: #ffffff;
+  background-color: #69ad2f;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  border-radius: 20px;
+}
+
+/* Main heading */
+.gallery-hero-content h1 {
+  margin-bottom: 22px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #1c3d27;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+/* Naturally Yours */
+.gallery-hero-content h1 span {
+  display: block;
+
+  color: #3f852b;
+  font-family: "Brush Script MT", cursive;
+  font-size: 58px;
+  font-weight: 400;
+}
+
+/* Description */
+.gallery-hero-content p {
+  max-width: 450px;
+  margin: 0;
+
+  color: #666666;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Right side */
+.gallery-hero-image {
+  width: 100%;
+  height: 360px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  overflow: hidden;
+}
+
+/* Actual image */
+.gallery-hero-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  margin: 0;
+
+  transition: transform 0.5s ease;
+}
+
+.gallery-hero-image:hover img {
+  transform: scale(1.03);
+}
+/* ==================================
+   GALLERY HERO
+================================== */
+
+.gallery-hero {
+  width: 100%;
+  background-color: #fffdf4;
+  overflow: hidden;
+}
+
+/* Left side */
+.gallery-hero-content {
+  min-height: 410px;
+  padding: 55px 40px 55px 8vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Small green label */
+.gallery-label {
+  width: fit-content;
+  padding: 7px 18px;
+  margin-bottom: 17px;
+
+  color: #ffffff;
+  background-color: #69ad2f;
+
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  border-radius: 20px;
+}
+
+/* Main heading */
+.gallery-hero-content h1 {
+  margin: 0 0 25px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #1c3d27;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+/* Naturally Yours */
+.gallery-hero-content h1 span {
+  display: block;
+
+  color: #3f852b;
+  font-family: "Brush Script MT", cursive;
+  font-size: 59px;
+  font-weight: 400;
+}
+
+/* Description */
+.gallery-hero-content p {
+  max-width: 470px;
+  margin: 0;
+
+  color: #666666;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Right image area */
+.gallery-hero-image {
+  width: 100%;
+  height: 410px;
+  overflow: hidden;
+}
+
+/* Right image */
+.gallery-hero-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  transition: transform 0.5s ease;
+}
+
+/* Image hover */
+.gallery-hero-image:hover img {
+  transform: scale(1.03);
+}
+/* ==================================
+   GALLERY SECTION
+================================== */
+
+.gallery-section {
+  padding: 35px 0 60px;
+  background-color: #ffffff;
+}
+
+/* Complete filter row */
+.gallery-filters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px;
+
+  margin-bottom: 32px;
+}
+
+/* One filter button */
+.gallery-filter {
+  min-width: 125px;
+  padding: 12px 22px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  color: #333333;
+  background-color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  border: none;
+  border-radius: 25px;
+
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+/* Button icon */
+.gallery-filter i {
+  color: #559d23;
+  font-size: 16px;
+}
+
+/* Current active button */
+.gallery-filter.active {
+  color: #ffffff;
+  background-color: #559d23;
+}
+
+/* Active button icon */
+.gallery-filter.active i {
+  color: #ffffff;
+}
+
+/* Hover */
+.gallery-filter:hover {
+  color: #ffffff;
+  background-color: #559d23;
+  transform: translateY(-3px);
+}
+
+/* Icon on hover */
+.gallery-filter:hover i {
+  color: #ffffff;
+}
+/* Gallery filters on phones */
+@media (max-width: 576px) {
+
+  .gallery-filters {
+    gap: 10px;
+  }
+
+  .gallery-filter {
+    min-width: auto;
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+
+}
+/* ==================================
+   CORRECT GALLERY GRID
+================================== */
+
+.gallery-section {
+  width: 100%;
+  padding: 35px 0 60px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+/* Bootstrap gallery row */
+.gallery-grid {
+  width: auto;
+}
+
+/* One Bootstrap column */
+.gallery-item {
+  min-width: 0;
+}
+
+/* Small landscape-shaped picture frame */
+.gallery-section .gallery-card {
+  position: relative;
+
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+
+  overflow: hidden;
+  background-color: #eeeeee;
+
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Actual picture */
+.gallery-section .gallery-card > img {
+  position: absolute;
+  inset: 0;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  transition: transform 0.5s ease;
+}
+
+/* Dark hover layer */
+.gallery-section .gallery-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+  background-color: rgba(23, 77, 43, 0.7);
+
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+/* Magnifying icon */
+.gallery-overlay i {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+/* Picture title */
+.gallery-overlay h3 {
+  margin: 0;
+
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+/* Image zoom */
+.gallery-card:hover > img {
+  transform: scale(1.09);
+}
+
+/* Display overlay */
+.gallery-card:hover .gallery-overlay {
+  opacity: 1;
+}
+/* ==================================
+   SHARED BENEFITS STRIP
+================================== */
+
+.product-benefits {
+  padding: 20px 0 55px;
+  background-color: #ffffff;
+}
+
+/* Complete light-green container */
+.benefits-wrapper {
+  padding: 28px 25px;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  background-color: #f5f9e9;
+  border: 1px solid #e6edd9;
+  border-radius: 18px;
+
+  box-shadow: 0 5px 20px rgba(23, 77, 43, 0.05);
+}
+
+/* One benefit */
+.product-benefit {
+  min-width: 0;
+  padding: 5px 18px;
+
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  border-right: 1px solid #dce6ce;
+}
+
+/* No line after the final benefit */
+.product-benefit:last-child {
+  border-right: none;
+}
+
+/* Round icon */
+.benefit-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #4f922d;
+  background-color: #e7f2d7;
+
+  font-size: 20px;
+  border-radius: 50%;
+
+  transition: 0.3s ease;
+}
+
+/* Heading */
+.product-benefit h3 {
+  margin: 0 0 5px;
+
+  color: #26352b;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* Description */
+.product-benefit p {
+  margin: 0;
+
+  color: #666666;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+/* Hover effect */
+.product-benefit:hover .benefit-icon {
+  color: #ffffff;
+  background-color: #4f922d;
+
+  transform: translateY(-4px) rotate(-5deg);
+}
+/* Tablets */
+@media (max-width: 991px) {
+
+  .benefits-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .product-benefit {
+    border-right: none;
+  }
+
+}
+
+
+/* Phones */
+@media (max-width: 576px) {
+
+  .benefits-wrapper {
+    grid-template-columns: 1fr;
+    padding: 25px 20px;
+  }
+
+  .product-benefit {
+    padding: 5px 0;
+  }
+
+}

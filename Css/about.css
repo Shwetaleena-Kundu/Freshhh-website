@@ -1,0 +1,382 @@
+/* About Hero */
+.about-hero {
+  padding: 70px 0;
+
+  background-color: #fffdf4;
+
+  overflow: hidden;
+}
+
+/* Small About Us label */
+.about-label {
+  display: inline-block;
+
+  padding: 7px 18px;
+  margin-bottom: 18px;
+
+  color: #ffffff;
+  background-color: #69ad2f;
+
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  border-radius: 20px;
+}
+
+/* Main heading */
+.about-hero-content h1 {
+  color: #1c3d27;
+
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 1.05;
+
+  margin-bottom: 24px;
+}
+
+/* Happy Life text */
+.about-hero-content h1 span {
+  display: block;
+
+  color: #3f852b;
+
+  font-family: "Brush Script MT", cursive;
+  font-size: 68px;
+  font-weight: 400;
+}
+
+/* Description */
+.about-hero-content > p {
+  max-width: 520px;
+
+  color: #666666;
+
+  font-size: 17px;
+  line-height: 1.7;
+
+  margin-bottom: 32px;
+}
+
+/* Benefits row */
+.about-benefits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+/* One benefit */
+.about-benefit {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Benefit icon */
+.about-benefit > i {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #3f852b;
+  background-color: #eff7e8;
+
+  font-size: 18px;
+
+  border-radius: 50%;
+}
+
+/* Benefit text */
+.about-benefit strong,
+.about-benefit span {
+  display: block;
+}
+
+/* Main benefit text */
+.about-benefit strong {
+  color: #1c3d27;
+  font-size: 15px;
+}
+
+/* Small benefit text */
+.about-benefit span {
+  color: #666666;
+  font-size: 13px;
+}
+
+/* Image container */
+.about-hero-image {
+  text-align: right;
+}
+
+/* Hero image */
+.about-hero-image img {
+  display: block;
+
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+
+  margin-left: auto;
+}
+/* Our Story section */
+.story-section {
+  padding: 75px 0;
+  background-color: #ffffff;
+}
+
+/* Farmer image */
+.story-image img {
+  display: block;
+
+  width: 100%;
+  height: 430px;
+
+  object-fit: cover;
+
+  border-radius: 25px;
+}
+
+/* Small Our Story label */
+.story-label {
+  display: block;
+
+  color: #4f922d;
+
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  margin-bottom: 12px;
+}
+
+/* Story heading */
+.story-content h2 {
+  color: #1c3d27;
+
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.15;
+
+  margin-bottom: 22px;
+}
+
+/* Script-style heading text */
+.story-content h2 span {
+  display: block;
+
+  color: #3f852b;
+
+  font-family: "Brush Script MT", cursive;
+  font-size: 48px;
+  font-weight: 400;
+}
+
+/* Story paragraphs */
+.story-content p {
+  color: #666666;
+
+  font-size: 15px;
+  line-height: 1.7;
+
+  margin-bottom: 15px;
+}
+
+/* Learn More button */
+.story-btn {
+  display: inline-block;
+
+  padding: 12px 21px;
+  margin-top: 10px;
+
+  color: #ffffff;
+  background-color: #3f852b;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  border-radius: 25px;
+
+  transition: all 0.3s ease;
+}
+
+.story-btn i {
+  margin-left: 8px;
+}
+
+.story-btn:hover {
+  color: #ffffff;
+  background-color: #174d2b;
+
+  transform: translateX(4px);
+}
+
+/* Values column */
+.story-values {
+  padding-left: 25px;
+
+  border-left: 1px solid #dce8d5;
+}
+
+/* One value */
+.story-value {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+
+  margin-bottom: 24px;
+}
+
+/* Value icon */
+.story-value > i {
+  width: 43px;
+  height: 43px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  color: #4f922d;
+  background-color: #eff7e8;
+
+  border-radius: 50%;
+}
+
+/* Value heading */
+.story-value h3 {
+  color: #1c3d27;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  margin-bottom: 4px;
+}
+
+/* Value description */
+.story-value p {
+  color: #777777;
+
+  font-size: 12px;
+  line-height: 1.5;
+
+  margin: 0;
+}
+/* Mission and Vision section */
+.mission-section {
+  padding: 65px 0;
+
+  background-color: #f3f9e8;
+}
+
+/* Section heading */
+.mission-heading {
+  text-align: center;
+
+  margin-bottom: 25px;
+}
+
+/* Small uppercase heading */
+.mission-heading span {
+  color: #4f852c;
+
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Mission and Vision item */
+.mission-item {
+  max-width: 330px;
+
+  text-align: center;
+
+  margin: 0 auto;
+}
+
+/* Round icon */
+.mission-icon {
+  width: 68px;
+  height: 68px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #4f922d;
+  background-color: #ffffff;
+
+  font-size: 27px;
+
+  border-radius: 50%;
+
+  margin: 0 auto 18px;
+
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+
+  transition: all 0.3s ease;
+}
+
+/* Icon hover */
+.mission-item:hover .mission-icon {
+  color: #ffffff;
+  background-color: #4f922d;
+
+  transform: translateY(-5px);
+}
+
+/* Item heading */
+.mission-item h2 {
+  color: #1c3d27;
+
+  font-size: 21px;
+  font-weight: 700;
+
+  margin-bottom: 12px;
+}
+
+/* Item paragraph */
+.mission-item p {
+  color: #555555;
+
+  font-size: 14px;
+  line-height: 1.7;
+
+  margin: 0;
+}
+
+/* Centre image */
+.mission-image {
+  text-align: center;
+}
+
+/* Basket image */
+.mission-image img {
+  display: block;
+
+  width: 100%;
+  max-width: 330px;
+  height: 230px;
+
+  object-fit: contain;
+
+  margin: 0 auto;
+  transition: 2s;
+}
+.mission-image:hover img{
+ transform: translateY(-8px) scale(1.07) rotate(2deg);
+
+  filter: drop-shadow(
+    0 12px 10px rgba(23, 77, 43, 0.2)
+  );
+}
+/* Current page in navbar */
+/* Current page link */
+.header .navbar-nav .nav-link.active {
+  color: #26862f;

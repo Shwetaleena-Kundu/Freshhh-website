@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Gallery | Freshhh</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome 5 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <!-- Lightbox CSS -->
+  <link rel="stylesheet" href="./Css/lightbox.css">
+
+  <!-- Shared website CSS -->
+  <link rel="stylesheet" href="./Css/main.css">
+
+  <!-- Gallery page CSS -->
+  <link rel="stylesheet" href="./Css/gallery.css">
+  <link rel="stylesheet" href="./Css/Wishlist.css">
+  <!-- Responsive CSS -->
+  <link rel="stylesheet" href="./Css/responsive-style.css">
+</head>
+
+
+<body>
+
+  <!-- ==================================
+       NAVBAR STARTS
+  =================================== -->
+  <header id="full_nav">
+    <div class="header">
+      <div class="container">
+
+        <nav class="navbar navbar-expand-lg">
+
+          <!-- Logo -->
+          <a class="navbar-brand" href="index.html">
+
+            <img src="./Images/logo.png" alt="Freshhh logo" width="150">
+
+          </a>
+
+
+          <!-- Mobile menu button -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Open navigation menu">
+            <i class="fas fa-stream"></i>
+          </button>
+
+
+          <!-- Collapsible navbar content -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+
+            <!-- Navigation links -->
+            <ul class="navbar-nav mx-auto">
+
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                  Home
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">
+                  About
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="product.html">
+                  Product
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" href="gallery.html" aria-current="page">
+                  Gallery
+                </a>
+              </li>
+
+            </ul>
+
+
+            <!-- Right navbar area -->
+            <div class="header_right d-lg-flex align-items-center gap-3">
+
+              <!-- Phone number -->
+              <div class="phone-area">
+
+                <span class="call-label">
+                  Call Us
+                </span>
+
+                <a class="phone_no" href="tel:+918327708601">
+                  <i class="fas fa-phone-alt"></i>
+                  +91 8327708601
+                </a>
+
+              </div>
+
+
+              <!-- Search box -->
+              <div class="search-box">
+
+                <input type="search" placeholder="Search products..." aria-label="Search products">
+
+                <button type="button" aria-label="Submit search">
+                  <i class="fas fa-search"></i>
+                </button>
+
+              </div>
+              <a class="wishlist-nav-btn" href="wishlist.html" aria-label="View wishlist">
+                <i class="fas fa-heart"></i>
+
+                <span>
+                  Wishlist
+                  (<span class="wishlist-count">0</span>)
+                </span>
+              </a>
+
+
+              <!-- Account button -->
+              <a class="account-btn" href="register_login.html" aria-label="Login or create an account">
+                <i class="fas fa-user"></i>
+
+                <span class="visually-hidden">
+                  Register or Login
+                </span>
+              </a>
+
+
+              <!-- Cart button -->
+              <a class="btn btn-success cart-btn" href="Cart.html">
+                <i class="fas fa-shopping-cart"></i>
+
+                <span>
+                  Cart
+                  (<span class="cart-count">0</span>)
+                </span>
+              </a>
+            </div>
+            <!-- Right navbar area ends -->
+
+          </div>
+          <!-- Collapsible content ends -->
+
+        </nav>
+
+      </div>
+    </div>
+  </header>
+  <!-- NAVBAR ENDS -->
+
+
+  <!-- ==================================
+       GALLERY HERO STARTS
+  =================================== -->
+  <section class="gallery-hero">
+
+    <div class="container-fluid">
+      <div class="row align-items-center g-0">
+
+        <!-- Left text -->
+        <div class="col-lg-5">
+
+          <div class="gallery-hero-content">
+
+            <span class="gallery-label">
+              Our Gallery
+            </span>
+
+            <h1>
+              Fresh Moments,
+
+              <span>
+                Naturally Yours
+              </span>
+            </h1>
+
+            <p>
+              A glimpse of our fresh produce, happy customers,
+              and the love we put into everything we do.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- Right image -->
+        <div class="col-lg-7">
+
+          <div class="gallery-hero-image">
+
+            <img src="./Images/full basket.png" alt="Basket filled with fresh fruits and vegetables">
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+  <!-- GALLERY HERO ENDS -->
+  <!-- Gallery content starts -->
+  <section class="gallery-section">
+    <div class="container">
+
+      <!-- Gallery filter buttons -->
+      <div class="gallery-filters">
+
+        <button class="gallery-filter active" type="button" data-filter="all">
+          <i class="fas fa-th-large"></i>
+          All
+        </button>
+
+        <button class="gallery-filter" type="button" data-filter="fruits">
+          <i class="fas fa-apple-alt"></i>
+          Fruits
+        </button>
+
+        <button class="gallery-filter" type="button" data-filter="vegetables">
+          <i class="fas fa-leaf"></i>
+          Vegetables
+        </button>
+
+        <button class="gallery-filter" type="button" data-filter="organic">
+          <i class="fas fa-seedling"></i>
+          Organic
+        </button>
+
+        <button class="gallery-filter" type="button" data-filter="farm">
+          <i class="fas fa-tractor"></i>
+          Farm
+        </button>
+
+        <button class="gallery-filter" type="button" data-filter="customers">
+          <i class="fas fa-users"></i>
+          Customers
+        </button>
+
+        <button class="gallery-filter" type="button" data-filter="events">
+          <i class="far fa-calendar-alt"></i>
+          Events
+        </button>
+
+      </div>
+
+      <!-- Gallery pictures will come here next -->
+      <!-- Gallery grid starts -->
+      <div class="row g-3 gallery-grid">
+
+        <!-- Image 1 -->
+        <div class="col-lg-3 col-md-6 gallery-item fruits">
+
+          <a class="gallery-card" href="./Images/fruit basket.png" data-lightbox="freshhh-gallery"
+            data-title="Fresh Fruit Basket">
+            <img src="./Images/fruit basket.png" alt="Basket filled with fresh fruits">
+
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <h3>Fresh Fruits</h3>
+            </div>
+          </a>
+
+        </div>
+
+
+        <!-- Image 2 -->
+        <div class="col-lg-3 col-md-6 gallery-item vegetables">
+
+          <a class="gallery-card" href="./Images/vegetable bssket.png" data-lightbox="freshhh-gallery"
+            data-title="Fresh Vegetable Crate">
+            <img src="./Images/vegetable bssket.png" alt="Crate filled with fresh vegetables">
+
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <h3>Fresh Vegetables</h3>
+            </div>
+          </a>
+
+        </div>
+
+
+        <!-- Image 3 -->
+        <div class="col-lg-3 col-md-6 gallery-item farm">
+
+          <a class="gallery-card" href="./Images/farm land.png" data-lightbox="freshhh-gallery"
+            data-title="Freshhh Farm">
+            <img src="./Images/farm land.png" alt="Green farm field during sunrise">
+
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <h3>Our Farms</h3>
+            </div>
+          </a>
+
+        </div>
+
+
+        <!-- Image 4 -->
+        <div class="col-lg-3 col-md-6 gallery-item farm">
+
+          <a class="gallery-card" href="./Images/farmers.png" data-lightbox="freshhh-gallery"
+            data-title="Trusted Farmer">
+            <img src="./Images/farmers.png" alt="Farmer holding freshly harvested vegetables">
+
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <h3>Trusted Farmers</h3>
+            </div>
+          </a>
+
+        </div>
+
+
+        <!-- Image 5 -->
+        <div class="col-lg-3 col-md-6 gallery-item vegetables">
+
+          <a class="gallery-card" href="./Images/V basket.png" data-lightbox="freshhh-gallery"
+            data-title="Vegetable Basket">
+            <img src="./Images/V basket.png" alt="Basket filled with colourful vegetables">
+
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <h3>Vegetable Basket</h3>
+            </div>
+          </a>
+
+        </div>
+
+
+        <!-- Image 6 -->
+        <div class="col-lg-3 col-md-6 gallery-item customers">
+
+          <a class="gallery-card" href="./Images/customer.png" data-lightbox="freshhh-gallery"
+            data-title="Happy Customer">
+            <img src="./Images/customer.png" alt="Customer shopping for fresh vegetables">
+
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <h3>Happy Customers</h3>
+            </div>
+          </a>
+
+        </div>
+
+
+        <!-- Image 7 -->
+        <div class="col-lg-3 col-md-6 gallery-item organic">
+
+          <a class="gallery-card" href="./Images/natural.png" data-lightbox="freshhh-gallery"
+            data-title="100 Percent Natural Fruits">
+            <img src="./Images/natural.png" alt="Fresh fruit basket with a 100 percent natural sign">
+
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <h3>100% Natural</h3>
+            </div>
+          </a>
+
+        </div>
+
+
+        <!-- Image 8 -->
+        <div class="col-lg-3 col-md-6 gallery-item organic">
+
+          <a class="gallery-card" href="./Images/herb.png" data-lightbox="freshhh-gallery"
+            data-title="Fresh Organic Herbs">
+            <img src="./Images/herb.png" alt="Basket filled with fresh green herbs">
+
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <h3>Organic Herbs</h3>
+            </div>
+          </a>
+
+        </div>
+
+
+        <!-- Image 9 -->
+        <div class="col-lg-3 col-md-6 gallery-item fruits farm">
+
+          <a class="gallery-card" href="./Images/orchad.png" data-lightbox="freshhh-gallery"
+            data-title="Orange Orchard">
+            <img src="./Images/orchad.png" alt="Fresh oranges growing in an orchard">
+
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <h3>Orange Orchard</h3>
+            </div>
+          </a>
+
+        </div>
+
+
+        <!-- Image 10 -->
+        <div class="col-lg-3 col-md-6 gallery-item customers">
+
+          <a class="gallery-card" href="./Images/crate close up.png" data-lightbox="freshhh-gallery"
+            data-title="Fresh Vegetable Crate">
+            <img src="./Images/crate close up.png" alt="Person holding a crate filled with vegetables">
+
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <h3>Harvest Collection</h3>
+            </div>
+          </a>
+
+        </div>
+
+
+        <!-- Image 11 -->
+        <div class="col-lg-3 col-md-6 gallery-item vegetables organic">
+
+          <a class="gallery-card" href="./Images/harvest up-close.png" data-lightbox="freshhh-gallery"
+            data-title="Fresh Vegetable Harvest">
+            <img src="./Images/harvest up-close.png" alt="Close-up of freshly harvested vegetables">
+
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <h3>Fresh Harvest</h3>
+            </div>
+          </a>
+
+        </div>
+
+
+        <!-- Image 12 -->
+        <div class="col-lg-3 col-md-6 gallery-item events">
+
+          <a class="gallery-card" href="./Images/stall market.png" data-lightbox="freshhh-gallery"
+            data-title="Fresh Market">
+            <img src="./Images/stall market.png" alt="Market stall displaying fresh fruits and vegetables">
+
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+              <h3>Fresh Market</h3>
+            </div>
+          </a>
+
+        </div>
+
+      </div>
+      <!-- Gallery grid ends -->
+
+    </div>
+  </section>
+  <!-- Gallery section ends -->
+  <!-- Benefits strip starts -->
+  <section class="product-benefits">
+    <div class="container">
+
+      <div class="benefits-wrapper">
+
+        <!-- Benefit 1 -->
+        <div class="product-benefit">
+
+          <div class="benefit-icon">
+            <i class="fas fa-leaf"></i>
+          </div>
+
+          <div class="benefit-text">
+            <h3>100% Natural</h3>
+
+            <p>
+              Pure and chemical-free products.
+            </p>
+          </div>
+
+        </div>
+
+
+        <!-- Benefit 2 -->
+        <div class="product-benefit">
+
+          <div class="benefit-icon">
+            <i class="fas fa-seedling"></i>
+          </div>
+
+          <div class="benefit-text">
+            <h3>Farm Fresh</h3>
+
+            <p>
+              Handpicked directly from farms.
+            </p>
+          </div>
+
+        </div>
+
+
+        <!-- Benefit 3 -->
+        <div class="product-benefit">
+
+          <div class="benefit-icon">
+            <i class="fas fa-shipping-fast"></i>
+          </div>
+
+          <div class="benefit-text">
+            <h3>Fast Delivery</h3>
+
+            <p>
+              Quick delivery to your doorstep.
+            </p>
+          </div>
+
+        </div>
+
+
+        <!-- Benefit 4 -->
+        <div class="product-benefit">
+
+          <div class="benefit-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+
+          <div class="benefit-text">
+            <h3>Secure Payment</h3>
+
+            <p>
+              100% safe and secure payments.
+            </p>
+          </div>
+
+        </div>
+
+
+        <!-- Benefit 5 -->
+        <div class="product-benefit">
+
+          <div class="benefit-icon">
+            <i class="fas fa-headset"></i>
+          </div>
+
+          <div class="benefit-text">
+            <h3>24/7 Support</h3>
+
+            <p>
+              We are always here to help.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- Benefits strip ends -->
+
+
+  </div>
+  </section>
+  <!-- Gallery content ends -->
+
+
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" <script
+    src="./Js/main.js"></script>
+  ></script>
+
+</body>
+
+</html>

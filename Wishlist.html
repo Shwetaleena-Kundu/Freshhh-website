@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>My Wishlist | Freshhh</title>
+
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  >
+
+  <link rel="stylesheet" href="./Css/main.css">
+  <link rel="stylesheet" href="./Css/product.css">
+  <link rel="stylesheet" href="./Css/Wishlist.css">
+  
+</head>
+
+<body>
+
+  <!-- Navbar starts -->
+  <header id="full_nav">
+    <div class="header">
+      <div class="container">
+
+        <nav class="navbar navbar-expand-lg">
+
+          <a class="navbar-brand" href="index.html">
+            <img src="./Images/logo.png" alt="Freshhh logo" width="150">
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-stream"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="product.html">Product</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+
+            <div class="header_right d-lg-flex align-items-center gap-3">
+
+              <div class="phone-area">
+                <span class="call-label">Call Us</span>
+
+                <a class="phone_no" href="tel:+918327708601">
+                  <i class="fas fa-phone-alt"></i>
+                  +91 8327708601
+                </a>
+              </div>
+
+              <div class="search-box">
+                <input
+                  type="search"
+                  placeholder="Search products..."
+                  aria-label="Search products"
+                >
+
+                <button type="button" aria-label="Search">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+
+              <a
+                class="account-btn"
+                href="register_login.html"
+                aria-label="Login or create an account"
+              >
+                <i class="fas fa-user"></i>
+                <span>Register/Login</span>
+              </a>
+
+              <a
+                class="wishlist-nav-btn active"
+                href="wishlist.html"
+                aria-label="View wishlist"
+                aria-current="page"
+              >
+                <i class="fas fa-heart"></i>
+
+                <span>
+                  Wishlist
+                  (<span class="wishlist-count">0</span>)
+                </span>
+              </a>
+
+              <a class="btn btn-success cart-btn" href="cart.html">
+                <i class="fas fa-shopping-cart"></i>
+                Cart (0)
+              </a>
+
+            </div>
+
+          </div>
+
+        </nav>
+
+      </div>
+    </div>
+  </header>
+  <!-- Navbar ends -->
+
+
+  <!-- Wishlist page starts -->
+  <main>
+
+    <!-- Wishlist hero starts -->
+    <section class="wishlist-hero">
+      <div class="container">
+
+        <div class="wishlist-hero-content">
+
+          <div class="breadcrumb-links">
+            <a href="index.html">Home</a>
+            <span>›</span>
+            <span>Wishlist</span>
+          </div>
+
+          <span class="wishlist-label">
+            <i class="fas fa-heart"></i>
+            Your Favourites
+          </span>
+
+          <h1>My Wishlist</h1>
+
+          <p>
+            All the fresh products you love,
+            saved together in one place.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- Wishlist hero ends -->
+
+
+    <!-- Wishlist products start -->
+    <section class="wishlist-section">
+      <div class="container">
+
+        <div class="wishlist-toolbar">
+
+          <div>
+            <h2>Saved Products</h2>
+            <p id="wishlist-page-count">0 products saved</p>
+          </div>
+
+          <a class="continue-shopping-btn" href="product.html">
+            <i class="fas fa-arrow-left"></i>
+            Continue Shopping
+          </a>
+
+        </div>
+
+        <!-- Shown when no products are saved -->
+        <div class="empty-wishlist" id="empty-wishlist">
+
+          <div class="empty-wishlist-icon">
+            <i class="far fa-heart"></i>
+          </div>
+
+          <h2>Your wishlist is empty</h2>
+
+          <p>
+            Save your favourite fruits and vegetables
+            by clicking the heart on a product.
+          </p>
+
+          <a class="explore-products-btn" href="product.html">
+            Explore Products
+            <i class="fas fa-arrow-right"></i>
+          </a>
+
+        </div>
+
+        <!-- JavaScript adds saved product cards here -->
+        <div
+          class="row g-4 wishlist-grid"
+          id="wishlist-grid"
+        ></div>
+
+      </div>
+    </section>
+    <!-- Wishlist products end -->
+
+  </main>
+  <!-- Wishlist page ends -->
+
+
+  <!-- Benefits strip starts -->
+  <section class="product-benefits">
+    <div class="container">
+
+      <div class="benefits-wrapper">
+
+        <div class="product-benefit">
+          <div class="benefit-icon">
+            <i class="fas fa-leaf"></i>
+          </div>
+
+          <div>
+            <h3>100% Natural</h3>
+            <p>Pure and chemical-free products.</p>
+          </div>
+        </div>
+
+        <div class="product-benefit">
+          <div class="benefit-icon">
+            <i class="fas fa-seedling"></i>
+          </div>
+
+          <div>
+            <h3>Farm Fresh</h3>
+            <p>Handpicked directly from farms.</p>
+          </div>
+        </div>
+
+        <div class="product-benefit">
+          <div class="benefit-icon">
+            <i class="fas fa-shipping-fast"></i>
+          </div>
+
+          <div>
+            <h3>Fast Delivery</h3>
+            <p>Quick delivery to your doorstep.</p>
+          </div>
+        </div>
+
+        <div class="product-benefit">
+          <div class="benefit-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+
+          <div>
+            <h3>Secure Payment</h3>
+            <p>Safe and secure payments.</p>
+          </div>
+        </div>
+
+        <div class="product-benefit">
+          <div class="benefit-icon">
+            <i class="fas fa-headset"></i>
+          </div>
+
+          <div>
+            <h3>24/7 Support</h3>
+            <p>We are always here to help.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- Benefits strip ends -->
+
+
+  <!-- Footer starts -->
+  <footer class="footer">
+    <div class="container">
+
+      <div class="row g-4">
+
+        <div class="col-lg-3 col-md-6">
+          <a class="footer-logo" href="index.html">
+            <i class="fas fa-leaf"></i>
+            freshhh
+          </a>
+
+          <p class="footer-about">
+            Freshhh brings you the freshest fruits, vegetables
+            and herbs straight from trusted farms to your home.
+          </p>
+
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <a href="#" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="#" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h3>Quick Links</h3>
+
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h3>Customer Service</h3>
+
+          <ul class="footer-links">
+            <li><a href="#">My Orders</a></li>
+            <li><a href="#">Delivery Information</a></li>
+            <li><a href="#">Returns &amp; Refunds</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h3>Contact Us</h3>
+
+          <ul class="contact-list">
+            <li>
+              <i class="fas fa-phone-alt"></i>
+              <a href="tel:+918327708601">+91 8327708601</a>
+            </li>
+
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:hello@freshhh.in">hello@freshhh.in</a>
+            </li>
+
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Bhubaneswar, Odisha, India</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Freshhh. All rights reserved.</p>
+      </div>
+
+    </div>
+  </footer>
+  <!-- Footer ends -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="./Js/main.js"></script>
+<script src="./Js/product-page.js"></script>
+<script src="./Js/Wishlist-page.js"></script>
+</body>
+
+</html>

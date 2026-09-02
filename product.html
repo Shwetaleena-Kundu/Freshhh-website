@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Freshhh</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome 5 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <!-- Lightbox CSS -->
+  <link rel="stylesheet" href="./Css/lightbox.css">
+  <link rel="stylesheet" href="./Css/Wishlist.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./Css/main.css">
+  <link rel="stylesheet" href="./Css/product.css">
+</head>
+
+<body>
+
+  <!-- Navbar starts -->
+  <header id="full_nav">
+    <div class="header">
+      <div class="container">
+
+        <nav class="navbar navbar-expand-lg">
+
+          <!-- Logo -->
+          <a class="navbar-brand" href="index.html">
+            <img src="./Images/logo.png" alt="Freshhh logo" width="150">
+          </a>
+
+          <!-- Mobile menu button -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-stream"></i>
+          </button>
+
+          <!-- Collapsible navbar content -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+
+            <!-- Navigation links -->
+            <ul class="navbar-nav mx-auto">
+
+              <li class="nav-item">
+                <a class="nav-link " href="index.html">
+                  Home
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link " href="about.html">
+                  About
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="product.html">
+                  Product
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">
+                  Gallery
+                </a>
+              </li>
+
+            </ul>
+
+            <!-- Phone number -->
+            <!-- Right side of navbar -->
+            <div class="header_right d-lg-flex align-items-center gap-3">
+
+              <div class="phone-area">
+                <span class="call-label">Call Us</span>
+
+                <a class="phone_no" href="tel:+918327708601">
+                  <i class="fas fa-phone-alt"></i>
+                  +91 8327708601
+                </a>
+              </div>
+              <!-- Search box -->
+              <div class="search-box">
+                <input type="search" placeholder="Search products..." aria-label="Search products">
+
+                <button type="button" aria-label="Search">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+              <a class="wishlist-nav-btn" href="wishlist.html" aria-label="View wishlist">
+                <i class="fas fa-heart"></i>
+
+                <span>
+                  Wishlist
+                  (<span class="wishlist-count">0</span>)
+                </span>
+              </a>
+
+              <a class="account-btn" href="register_login.html" aria-label="Login or create an account">
+                <i class="fas fa-user"></i>
+                <span>Register/Login</span>
+              </a>
+
+
+              <!-- Cart button -->
+              <a class="btn btn-success cart-btn" href="Cart.html">
+                <i class="fas fa-shopping-cart"></i>
+
+                <span>
+                  Cart
+                  (<span class="cart-count">0</span>)
+                </span>
+              </a>
+
+            </div>
+            <!-- Collapsible navbar content ends -->
+
+        </nav>
+
+      </div>
+    </div>
+  </header>
+  <!-- Navbar ends -->
+  <!--Product Page main starts here-->
+  <main>
+    <!-- Product Hero starts -->
+    <section class="product-hero">
+      <div class="container">
+
+        <div class="row align-items-center">
+
+          <!-- Hero content -->
+          <div class="col-lg-5">
+
+            <div class="product-hero-content">
+
+              <!-- Breadcrumb -->
+              <div class="breadcrumb-links">
+                <a href="index.html">Home</a>
+                <span>›</span>
+                <span>Products</span>
+              </div>
+
+              <h1>
+                <span>Fresh</span>
+                Products
+                <i class="fas fa-leaf"></i>
+              </h1>
+
+              <p>
+                Handpicked fresh fruits and vegetables,
+                delivered directly to your doorstep.
+              </p>
+
+            </div>
+
+          </div>
+
+          <!-- Hero image -->
+          <div class="col-lg-7">
+
+            <div class="product-hero-image">
+              <img src="./Images/hero vegetable basket.png" alt="Basket filled with fresh fruits and vegetables">
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- Product Hero ends -->
+
+    <!-- Product shop area starts -->
+    <section class="product-shop">
+      <div class="container">
+
+        <!-- Sidebar and products share this row -->
+        <div class="row g-4">
+
+          <!-- =================================
+           LEFT SIDEBAR
+      ================================== -->
+          <aside class="col-lg-3">
+
+            <!-- Categories -->
+            <div class="filter-card">
+              <h2>Categories</h2>
+
+              <ul class="category-list">
+
+                <li>
+                  <a href="#" data-filter="all">
+                    <span>
+                      <i class="fas fa-th-large"></i>
+                      All Products
+                    </span>
+                    <strong>68</strong>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" data-filter="fruits">
+                    <span>
+                      <i class="fas fa-apple-alt"></i>
+                      Fresh Fruits
+                    </span>
+                    <strong>18</strong>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" data-filter="vegetables">
+                    <span>
+                      <i class="fas fa-leaf"></i>
+                      Green Vegetables
+                    </span>
+                    <strong>18</strong>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" data-filter="herbs">
+                    <span>
+                      <i class="fas fa-seedling"></i>
+                      Herbs &amp; Leaves
+                    </span>
+                    <strong>10</strong>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" data-filter="organic">
+                    <span>
+                      <i class="fas fa-carrot"></i>
+                      Organic Products
+                    </span>
+                    <strong>12</strong>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" data-filter="seasonal">
+                    <span>
+                      <i class="fas fa-sun"></i>
+                      Seasonal Picks
+                    </span>
+                    <strong>10</strong>
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+
+
+            <!-- Filter card -->
+            <div class="filter-card">
+              <h2>Filter By</h2>
+
+              <!-- Price range -->
+              <div class="filter-group">
+
+                <label for="price-range">
+                  Price Range
+                </label>
+
+                <input type="range" id="price-range" min="20" max="500" value="500">
+
+                <div class="price-values">
+                  <span>₹20</span>
+                  <span>₹500</span>
+                </div>
+
+              </div>
+
+
+              <!-- Organic filter -->
+                           <!-- Organic filter -->
+              <div class="filter-group">
+
+                <label class="check-option">
+
+                  <input
+                    type="checkbox"
+                    id="organic-filter"
+                  >
+
+                  <span>
+                    Organic products only
+                  </span>
+
+                </label>
+
+              </div>
+
+
+              <!-- Reset filters button -->
+              <button
+                class="reset-filters-btn"
+                id="reset-filters"
+                type="button"
+              >
+                <i class="fas fa-undo-alt"></i>
+
+                Reset Filters
+              </button>
+
+            </div>
+
+
+            <!-- Delivery card -->
+
+            <!-- Delivery card -->
+            <div class="delivery-card">
+
+              <div>
+                <h3>Free Delivery</h3>
+                <p>On orders above ₹499.</p>
+              </div>
+
+              <i class="fas fa-shipping-fast"></i>
+
+            </div>
+
+          </aside>
+          <!-- Left sidebar ends -->
+
+
+          <!-- =================================
+           RIGHT PRODUCT AREA
+      ================================== -->
+          <main class="col-lg-9">
+
+            <!-- Product toolbar -->
+            <div class="product-toolbar">
+
+              <p id="product-count">Showing 1–8 of 68 products</p>
+
+              <div class="toolbar-actions">
+
+                <label for="product-sort">
+                  Sort by:
+                </label>
+
+                <select id="product-sort">
+                  <option value="popularity">Popularity</option>
+                  <option value="newest">Newest</option>
+                  <option value="price-low">Price: Low to High</option>
+                  <option value="price-high">Price: High to Low</option>
+                  <option value="name">Name: A–Z</option>
+                </select>
+
+              </div>
+
+            </div>
+
+
+            <!-- =================================
+             PRODUCT GRID
+        ================================== -->
+            <div class="row g-4 product-grid" id="product-grid">
+
+              <!-- Product 1 -->
+              <div class="col-xl-3 col-lg-4 col-sm-6">
+                <article class="shop-product-card" data-category="fruits seasonal">
+
+                  <div class="shop-product-image">
+
+                    <span class="product-badge">
+                      Best Seller
+                    </span>
+
+                    <button class="wishlist-btn" type="button" aria-label="Add Fresh Red Apples to wishlist">
+                      <i class="far fa-heart"></i>
+                    </button>
+
+                    <img src="./Images/Kashmir apples.png" alt="Fresh red apples">
+
+                  </div>
+
+                  <div class="shop-product-content">
+
+                    <h3>Fresh Red Apples</h3>
+
+                    <p class="shop-product-price">
+                      ₹180 <span>/ kg</span>
+                    </p>
+
+                    <button class="shop-add-btn" type="button">
+                      <i class="fas fa-shopping-cart"></i>
+                      Add to Cart
+                    </button>
+
+                  </div>
+
+                </article>
+              </div>
+
+
+              <!-- Product 2 -->
+              <div class="col-xl-3 col-lg-4 col-sm-6">
+                <article class="shop-product-card" data-category="fruits">
+
+                  <div class="shop-product-image">
+
+                    <span class="product-badge">
+                      Fresh
+                    </span>
+
+                    <button class="wishlist-btn" type="button" aria-label="Add Green Seedless Grapes to wishlist">
+                      <i class="far fa-heart"></i>
+                    </button>
+
+                    <img src="./Images/grapes.png" alt="Green seedless grapes">
+
+                  </div>
+
+                  <div class="shop-product-content">
+
+                    <h3>Green Seedless Grapes</h3>
+
+                    <p class="shop-product-price">
+                      ₹120 <span>/ kg</span>
+                    </p>
+
+                    <button class="shop-add-btn" type="button">
+                      <i class="fas fa-shopping-cart"></i>
+                      Add to Cart
+                    </button>
+
+                  </div>
+
+                </article>
+              </div>
+
+
+              <!-- Product 3 -->
+              <div class="col-xl-3 col-lg-4 col-sm-6">
+                <article class="shop-product-card" data-category="vegetables">
+
+                  <div class="shop-product-image">
+
+                    <span class="product-badge discount-badge">
+                      20% Off
+                    </span>
+
+                    <button class="wishlist-btn" type="button" aria-label="Add Farm Fresh Tomatoes to wishlist">
+                      <i class="far fa-heart"></i>
+                    </button>
+
+                    <img src="./Images/fresh tomatoes.png" alt="Farm fresh tomatoes">
+
+                  </div>
+
+                  <div class="shop-product-content">
+
+                    <h3>Farm Fresh Tomatoes</h3>
+
+                    <p class="shop-product-price">
+                      ₹40
+                      <span class="old-price">₹50</span>
+                    </p>
+
+                    <button class="shop-add-btn" type="button">
+                      <i class="fas fa-shopping-cart"></i>
+                      Add to Cart
+                    </button>
+
+                  </div>
+
+                </article>
+              </div>
+
+
+              <!-- Product 4 -->
+              <div class="col-xl-3 col-lg-4 col-sm-6">
+                <article class="shop-product-card" data-category="vegetables herbs">
+
+                  <div class="shop-product-image">
+
+                    <span class="product-badge">
+                      Fresh
+                    </span>
+
+                    <button class="wishlist-btn" type="button" aria-label="Add Fresh Spinach to wishlist">
+                      <i class="far fa-heart"></i>
+                    </button>
+
+                    <img src="./Images/Spinach.png" alt="Fresh spinach">
+
+                  </div>
+
+                  <div class="shop-product-content">
+
+                    <h3>Fresh Spinach</h3>
+
+                    <p class="shop-product-price">
+                      ₹25 <span>/ bunch</span>
+                    </p>
+
+                    <button class="shop-add-btn" type="button">
+                      <i class="fas fa-shopping-cart"></i>
+                      Add to Cart
+                    </button>
+
+                  </div>
+
+                </article>
+              </div>
+
+
+              <!-- Product 5 -->
+              <div class="col-xl-3 col-lg-4 col-sm-6">
+                <article class="shop-product-card" data-category="vegetables organic">
+
+                  <div class="shop-product-image">
+
+                    <span class="product-badge organic-badge">
+                      Organic
+                    </span>
+
+                    <button class="wishlist-btn" type="button" aria-label="Add Organic Cucumber to wishlist">
+                      <i class="far fa-heart"></i>
+                    </button>
+
+                    <img src="./Images/cucumber.png" alt="Organic cucumber">
+
+                  </div>
+
+                  <div class="shop-product-content">
+
+                    <h3>Organic Cucumber</h3>
+
+                    <p class="shop-product-price">
+                      ₹30 <span>/ kg</span>
+                    </p>
+
+                    <button class="shop-add-btn" type="button">
+                      <i class="fas fa-shopping-cart"></i>
+                      Add to Cart
+                    </button>
+
+                  </div>
+
+                </article>
+              </div>
+
+
+              <!-- Product 6 -->
+              <div class="col-xl-3 col-lg-4 col-sm-6">
+                <article class="shop-product-card" data-category="fruits seasonal">
+
+                  <div class="shop-product-image">
+
+                    <span class="product-badge">
+                      New
+                    </span>
+
+                    <button class="wishlist-btn" type="button" aria-label="Add Juicy Oranges to wishlist">
+                      <i class="far fa-heart"></i>
+                    </button>
+
+                    <img src="./Images/orange.png" alt="Juicy oranges">
+
+                  </div>
+
+                  <div class="shop-product-content">
+
+                    <h3>Juicy Oranges</h3>
+
+                    <p class="shop-product-price">
+                      ₹100 <span>/ kg</span>
+                    </p>
+
+                    <button class="shop-add-btn" type="button">
+                      <i class="fas fa-shopping-cart"></i>
+                      Add to Cart
+                    </button>
+
+                  </div>
+
+                </article>
+              </div>
+
+
+              <!-- Product 7 -->
+              <div class="col-xl-3 col-lg-4 col-sm-6">
+                <article class="shop-product-card" data-category="vegetables">
+
+                  <div class="shop-product-image">
+
+                    <span class="product-badge">
+                      Best Seller
+                    </span>
+
+                    <button class="wishlist-btn" type="button" aria-label="Add Farm Potatoes to wishlist">
+                      <i class="far fa-heart"></i>
+                    </button>
+
+                    <img src="./Images/potato.png" alt="Farm potatoes">
+
+                  </div>
+
+                  <div class="shop-product-content">
+
+                    <h3>Farm Potatoes</h3>
+
+                    <p class="shop-product-price">
+                      ₹28 <span>/ kg</span>
+                    </p>
+
+                    <button class="shop-add-btn" type="button">
+                      <i class="fas fa-shopping-cart"></i>
+                      Add to Cart
+                    </button>
+
+                  </div>
+
+                </article>
+              </div>
+
+
+              <!-- Product 8 -->
+              <div class="col-xl-3 col-lg-4 col-sm-6">
+                <article class="shop-product-card" data-category="vegetables">
+
+                  <div class="shop-product-image">
+
+                    <span class="product-badge">
+                      Fresh
+                    </span>
+
+                    <button class="wishlist-btn" type="button" aria-label="Add Cauliflower to wishlist">
+                      <i class="far fa-heart"></i>
+                    </button>
+
+                    <img src="./Images/cauliflower.png" alt="Fresh cauliflower">
+
+                  </div>
+
+                  <div class="shop-product-content">
+
+                    <h3>Cauliflower</h3>
+
+                    <p class="shop-product-price">
+                      ₹35 <span>/ piece</span>
+                    </p>
+
+                    <button class="shop-add-btn" type="button">
+                      <i class="fas fa-shopping-cart"></i>
+                      Add to Cart
+                    </button>
+
+                  </div>
+
+                </article>
+              </div>
+
+            </div>
+            <!-- Product grid ends -->
+
+          </main>
+          <!-- Right product area ends -->
+
+        </div>
+        <!-- Shared Bootstrap row ends -->
+
+      </div>
+    </section>
+    <!-- Product shop area ends -->
+    <!-- Pagination starts -->
+    <nav class="product-pagination" id="product-pagination" aria-label="Product pages">
+
+      <a href="#" aria-label="Previous page">
+        <i class="fas fa-chevron-left"></i>
+      </a>
+
+      <a href="#" class="active" aria-current="page">
+        1
+      </a>
+
+      <a href="#">2</a>
+
+      <a href="#">3</a>
+
+      <a href="#">4</a>
+
+      <a href="#">5</a>
+
+      <a href="#">6</a>
+
+      <a href="#">7</a>
+
+      <a href="#">8</a>
+
+      <a href="#">9</a>
+
+      <a href="#" aria-label="Next page">
+        <i class="fas fa-chevron-right"></i>
+      </a>
+
+    </nav>
+    <!-- Pagination ends -->
+
+    <!-- Benefits strip starts -->
+    <section class="product-benefits">
+      <div class="container">
+
+        <div class="benefits-wrapper">
+
+          <!-- Benefit 1 -->
+          <div class="product-benefit">
+
+            <div class="benefit-icon">
+              <i class="fas fa-leaf"></i>
+            </div>
+
+            <div>
+              <h3>100% Natural</h3>
+              <p>Pure and chemical-free products.</p>
+            </div>
+
+          </div>
+
+
+          <!-- Benefit 2 -->
+          <div class="product-benefit">
+
+            <div class="benefit-icon">
+              <i class="fas fa-seedling"></i>
+            </div>
+
+            <div>
+              <h3>Farm Fresh</h3>
+              <p>Handpicked directly from farms.</p>
+            </div>
+
+          </div>
+
+
+          <!-- Benefit 3 -->
+          <div class="product-benefit">
+
+            <div class="benefit-icon">
+              <i class="fas fa-shipping-fast"></i>
+            </div>
+
+            <div>
+              <h3>Fast Delivery</h3>
+              <p>Quick delivery to your doorstep.</p>
+            </div>
+
+          </div>
+
+
+          <!-- Benefit 4 -->
+          <div class="product-benefit">
+
+            <div class="benefit-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+
+            <div>
+              <h3>Secure Payment</h3>
+              <p>Safe and secure payments.</p>
+            </div>
+
+          </div>
+
+
+          <!-- Benefit 5 -->
+          <div class="product-benefit">
+
+            <div class="benefit-icon">
+              <i class="fas fa-headset"></i>
+            </div>
+
+            <div>
+              <h3>24/7 Support</h3>
+              <p>We are always here to help.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- Benefits strip ends -->
+    <!-- Footer starts -->
+    <footer class="footer">
+      <div class="container">
+
+        <div class="row g-4">
+
+          <!-- Brand information -->
+          <div class="col-lg-3 col-md-6">
+
+            <a class="footer-logo" href="index.html">
+              <i class="fas fa-leaf"></i>
+              freshhh
+            </a>
+
+            <p class="footer-about">
+              Freshhh brings you the freshest fruits, vegetables
+              and herbs straight from trusted farms to your home.
+            </p>
+
+            <div class="social-links">
+
+              <a href="#" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+
+              <a href="#" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+
+              <a href="#" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+
+            </div>
+
+          </div>
+
+          <!-- Quick links -->
+          <div class="col-lg-3 col-md-6">
+
+            <h3>Quick Links</h3>
+
+            <ul class="footer-links">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+
+              <li>
+                <a href="about.html">About</a>
+              </li>
+
+              <li>
+                <a href="product.html">Products</a>
+              </li>
+
+              <li>
+                <a href="gallery.html">Gallery</a>
+              </li>
+
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+
+          </div>
+
+          <!-- Customer service -->
+          <div class="col-lg-3 col-md-6">
+
+            <h3>Customer Service</h3>
+
+            <ul class="footer-links">
+              <li>
+                <a href="#">My Orders</a>
+              </li>
+
+              <li>
+                <a href="#">Delivery Information</a>
+              </li>
+
+              <li>
+                <a href="#">Returns &amp; Refunds</a>
+              </li>
+
+              <li>
+                <a href="#">FAQs</a>
+              </li>
+
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+            </ul>
+
+          </div>
+
+          <!-- Contact information -->
+          <div class="col-lg-3 col-md-6">
+
+            <h3>Contact Us</h3>
+
+            <ul class="contact-list">
+
+              <li>
+                <i class="fas fa-phone-alt"></i>
+
+                <a href="tel:+918327708601">
+                  +91 8327708601
+                </a>
+              </li>
+
+              <li>
+                <i class="fas fa-envelope"></i>
+
+                <a href="mailto:hello@freshhh.in">
+                  hello@freshhh.in
+                </a>
+              </li>
+
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+
+                <span>
+                  Bhubaneswar, Odisha, India
+                </span>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+        <!-- Bottom copyright -->
+        <div class="footer-bottom">
+          <p>
+            &copy; 2026 Freshhh. All rights reserved.
+          </p>
+        </div>
+
+      </div>
+    </footer>
+    <!-- Footer ends -->
+
+
+    <!-- Bootstrap JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./Js/main.js"></script>
+    <script src="./Js/product-page.js"></script>
+
+</body>
+
+</html>
